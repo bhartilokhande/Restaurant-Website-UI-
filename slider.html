@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Sliders</title>
+
+  <style>
+  
+
+    .heading {
+      color: #ffff;
+      text-align: center;
+      margin-top: 76px;
+    }
+
+    .chefs {
+      background-image: url("asset/img/chefs-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 50px;
+      height: 600px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .chefs::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: -1;
+    }
+
+    .chefs_img {
+      position: relative;
+    }
+
+    .chefs_name {
+      position: absolute;
+      border: 3px solid #ffff;
+      background-color: white;
+      padding: 38px 138px;
+      bottom: -18px;
+      left: 25px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    .chefs_img1 {
+      position: relative;
+    }
+
+    .chefs_name1 {
+      position: absolute;
+      border: 3px solid #ffff;
+      background-color: white;
+      bottom: left;
+      padding: 38px 132px;
+      bottom: -18px;
+      left: 454px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    .chefs_img2 {
+      position: relative;
+    }
+
+    .chefs_name2 {
+      position: absolute;
+      border: 3px solid #ffff;
+      background-color: white;
+      padding: 38px 120px;
+      bottom: -18px;
+      left: 881px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    .testimonials {
+      background-image: url("asset/img/testimonials-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 70px;
+      height: 500px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .testimonials::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      bottom: 0px;
+      background-color: rgba(12, 11, 10, 0.8)
+    }
+
+    .test_img {
+      height: 101px;
+      width: 101px;
+      border-radius: 50px;
+      border: 6px solid rgba(255, 255, 255, 0.15);
+      margin: 0 auto;
+    }
+
+    .carousel-inner {
+      text-align: center;
+    }
+
+    .carousel-item {
+      color: white;
+    }
+    .carousel_slide{
+      height: 380px;
+    }
+    .contact{
+      margin-top:70px;
+    }
+  </style>
+</head>
+
+<body>
+ 
+
+  <!-- chefs section start -->
+  <section class="chefs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class=" section_titile text-center mt-5">
+            <h3 class="special_heading">Some Photos of Our Restaurant</h3>
+            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est <br>adipisci expedita at
+              voluptas atque vitaeautem.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="chefs_img">
+            <img class="img-fluid" src="asset/img/chefs/chefs-1.jpg">
+          </div>
+          <div class="chefs_name">
+            <h6>Walter White</h6>
+            <span>Master Chef</span>
+            <div class="social">
+              <a><i class="fab fa-facebook-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="chefs_img1">
+            <img class="img-fluid" src="asset/img/chefs/chefs-2.jpg">
+          </div>
+          <div class="chefs_name1">
+            <h6>Sarah Jhonson</h6>
+            <span>Patissier</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="chefs_img2">
+            <img class="img-fluid" src="asset/img/chefs/chefs-3.jpg">
+          </div>
+          <div class="chefs_name2">
+            <h6>William Anderson</h6>
+            <span>Cook</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- chefs section end -->
+  <!-- Testimonials Section  -->
+  <section class="testimonials">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="testimonials_slider">
+            <div id="carouselExampleIndicators" class="carousel slide carousel_slide " data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="asset/img/testimonials/testimonials-1.jpg" class="d-block test_img" alt="...">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p class="test_para"> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                    suscipit rhoncus. Accusantium<br>
+                    quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="asset/img/testimonials/testimonials-2.jpg" class="d-block  test_img" alt="...">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p class="test_para"> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                    suscipit rhoncus. Accusantium<br>
+                    quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="asset/img/testimonials/testimonials-3.jpg" class="d-block test_img" alt="...">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p class="test_para"> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                    suscipit rhoncus. Accusantium<br>
+                    quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section end -->
+  <!-- contact us section  start -->
+  <section class="contact"></section>
+  <!-- contact us section end -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,452 @@
+ @font-face{
+     
+     font-family: 'Exo 2', sans-serif;
+     font-family: 'Great Vibes', cursive;
+     src: url('asset/font/GreatVibes-Regular.ttf');
+
+ }
+ *{
+    margin: 0px;
+    padding: 0px;
+    
+}
+/* topbar */
+.topbar{
+    background-color: black
+}
+.topbar_content{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.topbar_item{
+    color:white;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+/* navbar */
+.navbar_brand{
+    color: #fff;
+    text-decoration: none;
+    font-size: 39px;
+    font-family: 'Great Vibes', cursive;
+    margin-left: 23px;
+}
+.navbar_brand:hover{
+    color: white;
+}
+.nav_link {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color:white;
+    margin: 6px;
+}
+.nav_link:hover{
+    color: orange;
+}
+.navbar_button{
+    background-color: orange;
+    color: white;
+    border-radius: 50px;
+    width: 150px;
+    border: none;
+    padding: 7px;
+}
+
+
+/* about section */
+.about_img{
+    background-image: url('../img/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.about_ul
+{
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+}
+ li{
+     list-style-type:none;
+
+   }    
+
+.about_para2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 17px;
+    
+}
+
+/* why choose our restaurant */
+.whyus_heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.75rem;
+    
+}
+.card{
+    height: 320px;
+    width: auto;
+    border: none;
+    text-align: center;
+    transition: width 2s, height 10s;
+}
+.card:hover{
+    opacity: 0.8;
+   
+    background-color:orange;
+    width: 320px;
+    height: 320px;
+    color: white;   
+    
+}
+.card_heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 29px;
+
+}
+.card_no{
+    font-size: 30px
+}
+
+/* chech out tasty menu */
+ .menu_heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.75rem;
+} 
+.menu_button{
+    border: 0px solid orange; 
+    font-size: 18px;
+    background-color: orange;
+    border: none;
+    padding: 6px 20px 6px 20px;
+    margin: 1px;
+    color: white;
+    border-radius: 30px;   
+}
+.menu_button:focus{
+    /* border: none; */
+    /* box-shadow: none; */
+    outline: none;
+}
+.menu_item{
+    position: relative;
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* .menu_item::before{
+    content: '......................................................................................................';
+    position: absolute;
+    top: -11%;
+    right: -105%;
+    width: 100%;
+    height: 100%;
+    color: #dad8d4; 
+} */
+
+ .menu_ingredients{
+    color: gray;
+    font-size: 14px
+} 
+
+/* slider */
+.demo {
+    background-image: url("../img/events-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 616px;
+    margin-top: 74PX;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider_img{
+      width: 100%;
+      height: auto;
+  }
+
+  .demo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(12, 11, 10, 0.8);
+    z-index: -1;
+  }
+
+ 
+/* Check our special */
+.special_heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.75rem;
+} 
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: orange;
+    background-color: white;   
+}
+.img{   
+    width:214px;
+    height: auto;
+} 
+
+.nav-link{
+    text-decoration: none;
+    display: block;
+    padding: 6px;
+    color: black;
+    font-weight: bold;
+    border: 12px solid;
+    margin:6px
+}
+.nav-link:hover{
+    color: orange;
+}
+
+.special_button{
+    width: 249px;
+}
+.special_button:focus{
+    outline: none;
+    border:3px solid orange;
+    border-style: none solid none none;
+}
+
+.heading_tab{
+    font-family: 'Great Vibes', cursive;
+    font-size: 27px; 
+}
+
+
+/* some photos of our restaurant */
+.gallery{
+    padding-bottom:0px;
+    margin-top:112px;
+}
+
+.gallery_item{
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+.img-fluid {
+    max-width: 100%;
+    height: 250px;
+    transition:  ease-in-out 0.4s;
+}
+.img-fluid:hover{
+    transform: scale(1.1);
+}
+
+/* <chef */
+.heading {
+    color: #ffff;
+    text-align: center;
+    margin-top: 76px;
+  }
+
+  .chefs {
+    background-image: url("../img/chefs-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .chefs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+  }
+
+  .chefs_img {
+    position: relative;
+  }
+
+  .chefs_name {
+    position: absolute;
+    border: 3px solid #ffff;
+    background-color: white;
+    padding: 38px 138px;
+    bottom: -18px;
+    left: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  .chefs_img1 {
+    position: relative;
+  }
+
+  .chefs_name1 {
+    position: absolute;
+    border: 3px solid #ffff;
+    background-color: white;
+    bottom: left;
+    padding: 38px 132px;
+    bottom: -18px;
+    left: 454px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  .chefs_img2 {
+    position: relative;
+  }
+  .c_image{
+      width: 100%;
+      height: auto;
+  }
+
+  .chefs_name2 {
+    position: absolute;
+    border: 3px solid #ffff;
+    background-color: white;
+    padding: 38px 120px;
+    bottom: -18px;
+    left: 881px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  /* testimoni */
+  .testimonials {
+    background-image: url("../img/testimonials-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .testimonials::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(12, 11, 10, 0.8)
+  }
+
+  .test_img {
+    height: 101px;
+    width: 101px;
+    border-radius: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+  }
+
+  .carousel-inner {
+    text-align: center;
+  }
+
+  .carousel-item {
+    color: white;
+  }
+  .carousel_slide{
+    height: 380px;
+  }
+  .contact{
+    margin-top:70px;
+  }
+
+
+/* contact us */
+.contact{
+    margin-top:70px;
+}
+.contact_heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.75rem;
+}
+.map{
+   margin-top:30px;
+}
+.fas{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+    color: orange;
+    float: left;
+    width: 44px;
+    height: 44px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contant_content h4{
+    padding: 0 0 0 21px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #433f39;
+}
+.contant_content p{
+    padding: 0 0 0 21px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #7a7368;
+}
+.button_submit{
+   
+    color: white;
+    background-color: orange;
+    border: 10px solid orange;
+    border-radius: 50px;
+}
+.button_submit:focus{
+    outline: none;
+
+}
+
+/* footer section  */
+.footer{
+    margin-top: 70px ;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+.footer_heading h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.75rem;
+    color: orange;
+    margin-top: 50px;
+}
+.footer_para{
+    font-size:12px;
+}
+
+.icon {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+    padding: 7px;
+    border-radius: 50px;
+    font-size: 21px;
+    background-color: rgba(255,255,255,0.15);
+}
+.copyright{
+    margin-top:20px;
+    font-size: 12px;
+}
+
+
+
+
